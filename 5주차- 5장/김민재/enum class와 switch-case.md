@@ -21,11 +21,12 @@ enum class Colors { BLACK, WHITE, RED, GREEN, BLUE }; // 스코프 열거형
 
 - enum class와 switch-case의 결합
 enum class는 자동으로 int로 변환되지 않기 때문에, switch 문에서 사용할 경우 명시적인 형 변환이 필요하다. 아래는 사용자로부터 색상 번호를 입력받아 해당 색상을 출력하는 예제이다.
+```cpp
 #include <iostream>
 using namespace std;
 
 enum class Colors { BLACK, WHITE, RED, GREEN, BLUE };
-```cpp
+
 int main() {
     int input;
     cout << "색상 번호를 입력하세요 (0~4): ";
