@@ -25,7 +25,7 @@ enum class는 자동으로 int로 변환되지 않기 때문에, switch 문에�
 using namespace std;
 
 enum class Colors { BLACK, WHITE, RED, GREEN, BLUE };
-
+```cpp
 int main() {
     int input;
     cout << "색상 번호를 입력하세요 (0~4): ";
@@ -56,6 +56,6 @@ int main() {
 
     return 0;
 }
-
+```
 
 이처럼 enum class를 사용할 경우, switch 문 내에서 각 case에 해당하는 열거형 상수를 사용할 수 있으며, 조건식과 case 간의 타입을 맞추기 위해 static_cast를 활용한 형 변환이 필요하다.
